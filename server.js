@@ -46,8 +46,5 @@ app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`🚀 Watembezi Safaris server running on port ${PORT}`);
-  console.log(`📍 Visit http://localhost:${PORT}`);
-});
+$$\huge\text{module.exports = app;}$$
+"Serverless export fix"

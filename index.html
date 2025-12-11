@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watembezi Safaris - Kenya Tourist Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Watembezi Adventure Logo" class="logo-img">
+                Watembezi Adventure
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="packages.html">Safari Packages</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="logo.png" alt="Watembezi Adventure" class="hero-logo">
+            <h1>Discover the Magic of Kenya</h1>
+            <p>Experience the ultimate safari adventure with expert guides and personalized consultation</p>
+            <a href="contact.html" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2>Why Choose Watembezi Adventure?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🌍 Expert Knowledge</h3>
+                    <p>Decades of experience in organizing memorable safaris across Kenya</p>
+                </div>
+                <div class="feature">
+                    <h3>✨ Personalized Experience</h3>
+                    <p>Customized itineraries tailored to your preferences and budget</p>
+                </div>
+                <div class="feature">
+                    <h3>🏆 Award-Winning Service</h3>
+                    <p>Recognized for excellence in wildlife tourism and customer satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Safari Destinations -->
+    <section class="safari-destinations">
+        <div class="container">
+            <h2>Key Safari Destinations</h2>
+            <p class="destinations-intro">Click any destination to explore detailed activities and what to expect</p>
+            <div class="card-grid destinations-card-grid">
+                <div class="card-item destination-card-item" data-destination="maasai-mara">
+                    <div class="card-icon">🦁</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Maasai Mara</h3>
+                        <p class="card-text">Home to the Great Migration with 1.5 million wildebeest crossing annually. Experience the Big Five in their natural habitat.</p>
+                        <button class="card-action-btn" onclick="openDestinationModal('maasai-mara')">Explore</button>
+                    </div>
+                </div>
+
+                <div class="card-item destination-card-item" data-destination="amboseli">
+                    <div class="card-icon">🐘</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Amboseli National Park</h3>
+                        <p class="card-text">The "Land of the Elephants" with over 500 large bull elephants and stunning Mount Kilimanjaro views.</p>
+                        <button class="card-action-btn" onclick="openDestinationModal('amboseli')">Explore</button>
+                    </div>
+                </div>
+
+                <div class="card-item destination-card-item" data-destination="tsavo-east">
+                    <div class="card-icon">🌍</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tsavo East National Park</h3>
+                        <p class="card-text">Kenya's largest park covering 13,747 square kilometers of raw African wilderness and diverse wildlife.</p>
+                        <button class="card-action-btn" onclick="openDestinationModal('tsavo-east')">Explore</button>
+                    </div>
+                </div>
+
+                <div class="card-item destination-card-item" data-destination="lake-nakuru">
+                    <div class="card-icon">🦩</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Lake Nakuru National Park</h3>
+                        <p class="card-text">Pink flamingo paradise with thousands of flamingos and over 400 bird species in one spectacular location.</p>
+                        <button class="card-action-btn" onclick="openDestinationModal('lake-nakuru')">Explore</button>
+                    </div>
+                </div>
+
+                <div class="card-item destination-card-item" data-destination="hells-gate">
+                    <div class="card-icon">🌋</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Hell's Gate National Park</h3>
+                        <p class="card-text">Adventure park featuring geothermal wonders, dramatic gorges, and unique walking safari experiences.</p>
+                        <button class="card-action-btn" onclick="openDestinationModal('hells-gate')">Explore</button>
+                    </div>
+                </div>
+
+                <div class="card-item destination-card-item" data-destination="samburu">
+                    <div class="card-icon">🦒</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Samburu National Reserve</h3>
+                        <p class="card-text">Northern frontier with unique semi-arid landscape and rare endemic species found nowhere else in Kenya.</p>
+                        <button class="card-action-btn" onclick="openDestinationModal('samburu')">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Modal -->
+    <div id="destinationModal" class="destination-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <p id="modalSubtitle" class="modal-subtitle"></p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>📍 Location & Access</h3>
+                    <p id="modalLocation"></p>
+                </div>
+                <div class="modal-section">
+                    <h3>🎯 Activities</h3>
+                    <div id="modalActivities" class="activities-list"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>🦁 Wildlife</h3>
+                    <div id="modalWildlife" class="wildlife-list"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>📅 Best Time to Visit</h3>
+                    <p id="modalBestTime"></p>
+                </div>
+                <div class="modal-section">
+                    <h3>💡 Pro Tips</h3>
+                    <div id="modalTips" class="tips-list"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="modal-cta-btn">Plan Visit to This Destination</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Adventure?</h2>
+            <p>Contact our expert consultants today for a personalized safari experience</p>
+            <a href="contact.html" class="cta-btn-large">Plan Your Safari</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Watembezi Adventure. All rights reserved.</p>
+            <p>Contact: info@watembezi-adventure.com | +254 (0) 123 456 789</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

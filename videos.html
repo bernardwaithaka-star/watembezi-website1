@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Videos - Watembezi Safaris</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="navbar navbar-dark navbar-expand-lg sticky-top header-dark">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="logo.png" alt="Watembezi Adventure Logo" class="brand-logo">
+                Watembezi Adventure
+            </a>
+            
+            <!-- Search Bar -->
+            <div class="search-container d-none d-lg-block">
+                <input type="text" class="form-control search-input" placeholder="Search safari videos...">
+                <i class="search-icon">🔍</i>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item user-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt="User Profile" class="rounded-circle" title="User Profile">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Category Filter -->
+        <section class="filter-section">
+            <div class="container-fluid px-4 py-4">
+                <h2 class="text-white mb-4">Featured Safari Videos</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+                    <button class="filter-btn" data-filter="experience">Experience</button>
+                    <button class="filter-btn" data-filter="guide">Guides</button>
+                    <button class="filter-btn" data-filter="culture">Culture</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Grid -->
+        <section class="videos-section">
+            <div class="container-fluid px-4 py-5">
+                <div class="row g-4" id="videoGrid">
+                    <!-- Video Card 1 -->
+                    <div class="col-12 col-sm-6 col-lg-4 video-item" data-category="wildlife">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://via.placeholder.com/400x225/1a5f3f/ffffff?text=Lion+Hunt" alt="Lion Hunt">
+                                <div class="play-button">
+                                    <i class="play-icon">▶</i>
+                                </div>
+                                <span class="duration">12:45</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">The Great Lion Hunt</h5>
+                                <p class="card-meta">
+                                    <span class="views">1.2M views</span>
+                                    <span class="date">2 weeks ago</span>
+                                </p>
+                                <p class="card-text">Experience the thrilling moment when lions hunt on the Maasai Mara plains.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div class="col-12 col-sm-6 col-lg-4 video-item" data-category="experience">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://via.placeholder.com/400x225/2a7a4f/ffffff?text=Safari+Camp" alt="Safari Camp">
+                                <div class="play-button">
+                                    <i class="play-icon">▶</i>
+                                </div>
+                                <span class="duration">08:30</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Luxury Safari Camp Tour</h5>
+                                <p class="card-meta">
+                                    <span class="views">856K views</span>
+                                    <span class="date">1 month ago</span>
+                                </p>
+                                <p class="card-text">Tour our premium lodge with stunning sunset views and world-class amenities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 3 -->
+                    <div class="col-12 col-sm-6 col-lg-4 video-item" data-category="guide">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://via.placeholder.com/400x225/c9302c/ffffff?text=Expert+Guide" alt="Expert Guide">
+                                <div class="play-button">
+                                    <i class="play-icon">▶</i>
+                                </div>
+                                <span class="duration">15:20</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Wildlife Expert Guide - Meet Joseph</h5>
+                                <p class="card-meta">
+                                    <span class="views">2.1M views</span>
+                                    <span class="date">3 weeks ago</span>
+                                </p>
+                                <p class="card-text">Meet our expert naturalist guide with 20+ years of wildlife experience.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 4 -->
+                    <div class="col-12 col-sm-6 col-lg-4 video-item" data-category="wildlife">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://via.placeholder.com/400x225/f0ad4e/ffffff?text=Elephant+Herd" alt="Elephant Herd">
+                                <div class="play-button">
+                                    <i class="play-icon">▶</i>
+                                </div>
+                                <span class="duration">10:15</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Magnificent Elephant Herds</h5>
+                                <p class="card-meta">
+                                    <span class="views">980K views</span>
+                                    <span class="date">1 month ago</span>
+                                </p>
+                                <p class="card-text">Watch massive herds of elephants migrate across Amboseli National Park.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 5 -->
+                    <div class="col-12 col-sm-6 col-lg-4 video-item" data-category="culture">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://via.placeholder.com/400x225/1a5f3f/ffffff?text=Maasai+Culture" alt="Maasai Culture">
+                                <div class="play-button">
+                                    <i class="play-icon">▶</i>
+                                </div>
+                                <span class="duration">13:45</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Maasai Culture & Traditions</h5>
+                                <p class="card-meta">
+                                    <span class="views">1.5M views</span>
+                                    <span class="date">2 months ago</span>
+                                </p>
+                                <p class="card-text">Discover the rich heritage and traditions of the Maasai people of Kenya.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 6 -->
+                    <div class="col-12 col-sm-6 col-lg-4 video-item" data-category="experience">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://via.placeholder.com/400x225/2a7a4f/ffffff?text=Sunrise+Safari" alt="Sunrise Safari">
+                                <div class="play-button">
+                                    <i class="play-icon">▶</i>
+                                </div>
+                                <span class="duration">09:50</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Perfect Sunrise Safari Moment</h5>
+                                <p class="card-meta">
+                                    <span class="views">2.3M views</span>
+                                    <span class="date">3 weeks ago</span>
+                                </p>
+                                <p class="card-text">Witness the magical moment when the sun rises over the African savanna.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 7 -->
+                    <div class="col-12 col-sm-6 col-lg-4 video-item" data-category="wildlife">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://via.placeholder.com/400x225/c9302c/ffffff?text=Cheetah+Chase" alt="Cheetah Chase">
+                                <div class="play-button">
+                                    <i class="play-icon">▶</i>
+                                </div>
+                                <span class="duration">11:30</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cheetah High-Speed Chase</h5>
+                                <p class="card-meta">
+                                    <span class="views">3.4M views</span>
+                                    <span class="date">1 week ago</span>
+                                </p>
+                                <p class="card-text">The fastest land animal in action - an incredible high-speed chase captured on film.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 8 -->
+                    <div class="col-12 col-sm-6 col-lg-4 video-item" data-category="guide">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://via.placeholder.com/400x225/f0ad4e/ffffff?text=Photography+Tips" alt="Photography Tips">
+                                <div class="play-button">
+                                    <i class="play-icon">▶</i>
+                                </div>
+                                <span class="duration">14:20</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Safari Photography Pro Tips</h5>
+                                <p class="card-meta">
+                                    <span class="views">645K views</span>
+                                    <span class="date">1 month ago</span>
+                                </p>
+                                <p class="card-text">Learn professional photography techniques for capturing amazing wildlife shots.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 9 -->
+                    <div class="col-12 col-sm-6 col-lg-4 video-item" data-category="culture">
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://via.placeholder.com/400x225/1a5f3f/ffffff?text=Local+Food" alt="Local Food">
+                                <div class="play-button">
+                                    <i class="play-icon">▶</i>
+                                </div>
+                                <span class="duration">07:45</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Traditional Kenyan Cuisine</h5>
+                                <p class="card-meta">
+                                    <span class="views">734K views</span>
+                                    <span class="date">2 weeks ago</span>
+                                </p>
+                                <p class="card-text">Experience authentic flavors and cooking methods of Kenya during your safari.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center mt-5">
+                    <button class="btn btn-outline-light btn-lg">Load More Videos</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-dark">
+        <div class="container-fluid">
+            <div class="row py-5 px-4">
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Watembezi Adventure</h6>
+                    <p class="text-secondary small">Your trusted partner for authentic Kenya safari experiences.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="packages.html" class="text-secondary text-decoration-none small">Packages</a></li>
+                        <li><a href="services.html" class="text-secondary text-decoration-none small">Services</a></li>
+                        <li><a href="about.html" class="text-secondary text-decoration-none small">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Contact</h6>
+                    <p class="text-secondary small">
+                        Email: info@watembezi-adventure.com<br>
+                        Phone: +254 (0) 123 456 789
+                    </p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-light fw-bold mb-3">Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#" class="text-secondary me-3">Facebook</a>
+                        <a href="#" class="text-secondary me-3">Instagram</a>
+                        <a href="#" class="text-secondary">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary py-3">
+                <p class="text-secondary text-center small mb-0">&copy; 2024 Watembezi Adventure. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="videos.js"></script>
+</body>
+</html>

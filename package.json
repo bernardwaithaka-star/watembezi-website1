@@ -1,0 +1,21 @@
+{
+  "name": "watembezi-safaris",
+  "version": "1.0.0",
+  "description": "Kenya Safari Consultation and Booking Website",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Site is ready to deploy'"
+  },
+  "keywords": [
+    "safari",
+    "kenya",
+    "tourism",
+    "travel"
+  ],
+  "author": "Watembezi Adventure",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

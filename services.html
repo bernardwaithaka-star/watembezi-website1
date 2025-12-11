@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Watembezi Safaris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Watembezi Adventure" class="logo-img">
+                Watembezi Adventure
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="packages.html">Safari Packages</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive safari planning and consultation services</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="card-item service-card-item" data-service="itinerary">
+                    <div class="card-icon">📋</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Itinerary Planning</h3>
+                        <p class="card-text">Customized safari experiences designed for you. Our expert consultants work with you to create personalized itineraries that match your interests, budget, and timeframe.</p>
+                        <button class="card-action-btn" onclick="openServiceModal('itinerary')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card-item service-card-item" data-service="accommodation">
+                    <div class="card-icon">🏨</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Accommodation Booking</h3>
+                        <p class="card-text">Luxury lodges & safari camps. We partner with the finest luxury lodges and safari camps across Kenya's premier wildlife destinations at all price points.</p>
+                        <button class="card-action-btn" onclick="openServiceModal('accommodation')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card-item service-card-item" data-service="transportation">
+                    <div class="card-icon">🚙</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Transportation Services</h3>
+                        <p class="card-text">Safe & comfortable safari vehicles. Professional drivers and well-maintained 4x4s equipped with modern amenities for all terrain safari experiences.</p>
+                        <button class="card-action-btn" onclick="openServiceModal('transportation')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card-item service-card-item" data-service="photography">
+                    <div class="card-icon">📸</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Photography Safari Tours</h3>
+                        <p class="card-text">Capture Africa's wildlife beauty. Specialized photography safari tours with expert guides trained in photography positioning for optimal light and angles.</p>
+                        <button class="card-action-btn" onclick="openServiceModal('photography')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card-item service-card-item" data-service="guides">
+                    <div class="card-icon">👨‍🏫</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Expert Naturalist Guides</h3>
+                        <p class="card-text">Knowledge, passion & expertise. Highly trained, certified guides with in-depth knowledge about animals, plants, ecosystems, and Kenyan culture for enriching experiences.</p>
+                        <button class="card-action-btn" onclick="openServiceModal('guides')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card-item service-card-item" data-service="visa">
+                    <div class="card-icon">📄</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Visa & Travel Assistance</h3>
+                        <p class="card-text">Hassle-free travel planning. We assist with visa applications, travel insurance, vaccinations, and pre-trip advice to ensure your journey is smooth and stress-free.</p>
+                        <button class="card-action-btn" onclick="openServiceModal('visa')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="service-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h2 id="serviceTitle"></h2>
+                <p id="serviceSubtitle" class="modal-subtitle"></p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3 id="serviceOverviewTitle"></h3>
+                    <p id="serviceOverview"></p>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Features</h3>
+                    <div id="serviceFeatures" class="service-features"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="modal-cta-btn">Get This Service</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Our Services Section -->
+    <section class="why-services">
+        <div class="container">
+            <h2>Why Choose Our Services?</h2>
+            <div class="services-benefits">
+                <div class="benefit-card">
+                    <h3>🎯 Tailored Solutions</h3>
+                    <p>Every service is customized to your specific needs and preferences</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>💼 Professional Expertise</h3>
+                    <p>Decades of combined experience in safari tourism and consultation</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🌟 Quality Assurance</h3>
+                    <p>We guarantee highest standards in every service we provide</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>💰 Best Value</h3>
+                    <p>Competitive pricing without compromising on quality</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>🤝 Dedicated Support</h3>
+                    <p>24/7 support from pre-booking through your entire safari</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>✅ Proven Track Record</h3>
+                    <p>Thousands of satisfied clients with excellent reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Experience Our Services?</h2>
+            <p>Contact us today for a consultation and let us create your perfect safari</p>
+            <a href="contact.html" class="cta-btn-large">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Watembezi Adventure. All rights reserved.</p>
+            <p>Contact: info@watembezi-adventure.com | +254 (0) 123 456 789</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
